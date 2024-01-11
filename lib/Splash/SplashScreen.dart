@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
       duration: const Duration(seconds: 2),
     );
 
-    _animationController.forward(); // Start the animation in the forward direction
+    _animationController.forward();
     _animationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         // Animation has completed, navigate to the next screen
